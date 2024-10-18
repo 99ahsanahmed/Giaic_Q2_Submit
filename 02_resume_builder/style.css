@@ -1,0 +1,59 @@
+body,html{
+  margin: 0;
+}
+#main {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  font-family:sans-serif;
+  padding: 10px;
+}
+
+#workExpDiv , #acad_div{
+  display: flex;
+  flex-direction: column;
+}
+
+#generate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* INPUT-FORM ENDS */
+
+#cv-tempelate{
+  background-color: #f2f2f2;
+  color: white;
+  height: 100vh;
+  display: none;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+#personalInfo{
+  width: 20%;
+  background-color: rgb(0, 109, 109);
+  
+}
+
+#professionalInfo{
+  width: 80%;
+  background-color: rgb(59, 56, 56);
+}
+
+#objective_div  , #qualification_div, #academics_div{
+  text-align: left;
+  padding: 5px 40px ;  
+}

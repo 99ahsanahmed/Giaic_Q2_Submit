@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- RIGHT SIDE -->
+      <div class="left">
+        <h1>PERSONAL INFORMATION</h1>
+        
+        <!-- Name -->
+        <label for="username">Your name</label>
+        <input type="text" id="username" placeholder="name.." />
+
+        <!-- Number -->
+        <label for="number">Your number</label>
+        <input type="number" id="number" placeholder="phone no..." />
+
+        <!-- mail -->
+        <label for="mail">Your mail</label>
+        <input type="mail" id="mail" placeholder="mail@..." />
+
+        <!-- address -->
+        <label for="address">Your address</label>
+        <textarea name="address" id="address" placeholder="address.." rows="4" cols="30"></textarea>
+
+        <h4>Important Links</h4>
+
+        <!-- facebook -->
+        <label for="facebook">Your facebook</label>
+        <input type="text" id="facebook" placeholder="facebook..." />
+
+        <!-- instagram -->
+        <label for="instagram">Your instagram</label>
+        <input type="text" id="instagram" placeholder="instagram..." />
+
+        <!-- linkedin -->
+        <label for="linkedin">Your linkedin</label>
+        <input type="text" id="linkedin" placeholder="linkedin..." />
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right">
+        <h1>PROFESSIONAL INFORMATION</h1>
+
+        <!-- objective -->
+        <label for="objective">Your objective</label>
+        <textarea name="objective" id="objective" placeholder="Objective.." rows="4" cols="30"></textarea>
+
+        <!-- workexp -->
+        <div id="workExpDiv">
+          <label for="workexp">Your work experience</label>
+          <textarea
+            name="workexp"
+            placeholder="Experience"
+            id="workexp_field"
+            class="workexp"
+            rows="4"
+            cols="30"
+          ></textarea>
+
+          <!-- <div id="work_btn">
+            <button onclick="addNewWork()">add</button>
+          </div> -->
+        </div>
+
+        <!-- academic_qual -->
+        <div id="acad_div">
+          <label for="academic_qual">Your academic qualification</label>
+          <textarea
+            name="academic_qual"
+            class="academic_qual"
+            placeholder="Qualification.."
+            id="academic_field"
+            rows="4"
+            cols="30"
+          ></textarea>
+        </div>
+
+        <!-- skills -->
+        <div id="acad_div">
+          <label for="skills">Your skills</label>
+          <textarea
+            name="skills"
+            class="skills"
+            placeholder="skills.."
+            id="skills_field"
+            rows="4"
+            cols="30"
+          ></textarea>
+        </div>
+
+        <!-- GENERATE CV -->
+        <div id="generate">
+          <button onclick="generate()" id="generate_btn">Generate CV</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV TEMPELATE -->
+    <div id="cv-tempelate">
+      <!-- LEFT-SIDE -->
+      <div id="personalInfo">
+        <!-- IMAGE -->
+        <img src="profile.png" width="150px" alt="my picture" />
+
+        <!-- NAME -->
+        <div id="name_div">
+          <h1 id="name_display" style="color:black ;"></h1>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact_div">
+          <h1>CONTACT:</h1>
+          <h4 id="number_display" style="color:black ;" ></h4>
+          <h4 id="mail_display" style="color:black ;" ></h4>
+        </div>
+
+        <!-- ADDRESS -->
+        <div id="address_div">
+          <h1>ADDRESS:</h1>
+          <h4 id="address_dis" style="color:black;" ></h4>
+        </div>
+        <hr>
+
+        <!-- links -->
+        <div id="links_div">
+          <div id="linksOnCv">
+            <a id="fb_display" href="" style="text-decoration:none; color:black;" >facebook |</a>
+            <a id="insta_display" href="" style="text-decoration:none; color:black;">instagram |</a>
+            <a id="linkedin_display" href="" style="text-decoration:none; color:black;">linkedin </a>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT-SIDE -->
+      <div id="professionalInfo">
+
+        <!-- Objective -->
+        <div id="objective_div">
+          <h1>Objective</h1>
+          <h3 id="objective_dis" style="color:black;" ></h3>
+        </div>
+
+        <!-- Qualification -->
+        <div id="qualification_div">
+          <h1>qualification</h1>
+          <h3 id="qualification_dis" style="color:black;"></h3>
+        </div>
+
+        <!-- academics -->
+        <div id="academics_div">
+          <h1>academics</h1>
+          <h3 id="academics_dis" style="color:black;"></h3>
+        </div>
+        <div id="print_btn">
+          <button onclick="printCv()" >Print or Save CV</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
